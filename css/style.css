@@ -1,0 +1,145 @@
+/* Disable Bootstrap scroll Behavior */
+*{
+  scroll-behavior: auto !important;
+}
+
+#event {
+  position: relative;
+  background-image: url(../images/events-heavenly-header.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100% 100%;
+}
+.eventOverlay {
+  position: absolute;
+  inset: 0px;
+  background-color: #f8504099;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  background-color: #414658;
+  height: 100vh;
+  position: fixed;
+  width: 0px;
+  z-index: 1;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+}
+.nav-toggle {
+  width: 250px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+
+.closebtn,
+.btnOpne {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.closebtn {
+  top: 40px;
+  left: 200px;
+}
+.closebtn::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+.closebtn:hover:after {
+  content: "close";
+}
+.btnOpne {
+  top: 100px;
+  left: 10px;
+}
+#main {
+  color: white;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.main-toggle {
+  margin-left: 250px;
+}
+#main h1 {
+  font-size: 60px;
+}
+#main p {
+  font-size: 20px;
+}
+
+#singers {
+  padding: 100px 0;
+  margin: 0px auto;
+  width: 50%;
+}
+
+#singers h3 {
+  padding: 10px;
+  margin: 0;
+  background-color: #d62e3399;
+  cursor: pointer;
+  color: white;
+}
+#singers h3:hover {
+  background-color: #de060d99;
+}
+#singers div {
+  padding: 10px;
+  background-color: #ccc;
+  display: none;
+}
+
+#countsec {
+  background-image: url(../images/invitation-2508607__340.jpg);
+  background-size: 100% 100%;
+  position: relative;
+  height: 40vh;
+}
+.border{
+  width: 95%;
+  box-shadow: 0 0 50px #ccc;
+}
+@media (min-width: 600px)  {
+    .border{
+      width: 65%;
+    }
+}
+.overlay {
+  position: absolute;
+  inset: 0px;
+  background-color: #d62e3399;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.con-social i {
+  margin-right: 10px;
+  border: 1px solid #999;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
